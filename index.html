@@ -21,18 +21,41 @@
 				color: #53A2BD;
 			}
 
-			.center {
+			/* .center {
 				margin: auto;
 				width: fit-content;
+			} */
+
+			.flex {
+				/* Main styling */
+				width: fit-content;
+				margin: auto;
+				
+				/* Set up flexbox */
+				display: flex;
+				flex-direction: row;
+				
+			}
+
+			.flex-vertical {
+				flex-direction: column;
+			}
+
+			.img-circle {
+				border-radius: 50%;
+				padding: 0 1.5rem;
 			}
 		</style>
 	</head>
 	<body>
-		<div class="center">
-			<h1>Once a shark, <br> always a shark.</h1>
-			<a href="https://www.linkedin.com/in/monica-shum-37a8b68b">link the shark</a> .
-			<a href="mailto:mshum3@gmail.com">mail the shark</a> .
-			<a href="https://www.thoughtworks.com/">work with the shark</a>
+		<div class="flex">
+			<img class="img-circle" src="businessshark.jpg">
+			<div class="flex-vertical">
+				<h1>Once a shark, <br> always a shark.</h1>
+				<a href="https://www.linkedin.com/in/monica-shum-37a8b68b">link the shark</a> .
+				<a href="mailto:mshum3@gmail.com">mail the shark</a> .
+				<a href="https://www.thoughtworks.com/">work with the shark</a>
+			</div>
 		</div>
 	</body>
 </html>
